@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body style="background: rgb(251, 242, 133);
+background: radial-gradient(
+  circle,
+  rgba(251, 242, 133, 0.6334908963585435) 0%,
+  rgba(224, 196, 91, 0.8407738095238095) 35%,
+  rgba(230, 224, 113, 1) 100%
+);">
+  <nav>
+    <ul>
+        <li><a href="../weather/index.html" id="current-tab" class="active">Current Weather</a></li>
+        <li><a href="10weather.html" id="forecast-tab">10 Day Forecast</a></li>
+        <li><a href="../SearchByCity/search.html" id="forecast-tab">Search by city</a></li>
+        <li><a href="../registration/login.html" id="forecast-tab">Login in</a></li>
+        <li><a href="../calculator/calculator.html" id="forecast-tab">Calculator</a></li>
+        <li><a href="../noteapp/note.html" id="forecast-tab">Note</a></li>
+        <li><a href="../modal/index.html" id="forecast-tab">Movie</a></li>
+        <li><a href="../froms/index.html" id="forecast-tab">Forms</a></li>
+        <li><a href="../game/game.html" id="forecast-tab">Game1</a></li>
+        <li><a href="../xo.html" id="forecast-tab">Game2</a></li>
+    </ul>
+  </nav>
+    <div class="calculator">
+        <input type="text" id="input" class="input" readonly>
+        <div class="buttons">
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('+')">+</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('-')">-</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendOperator('*')">*</button>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="clearInput()">C</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendOperator('/')">/</button>
+    </div>
+    <img src="image.png" alt="Rotating Image" id="rotating-image">
+  </div>
+  <script src="calculator.js">
+  </script>
+</body>
+</html>

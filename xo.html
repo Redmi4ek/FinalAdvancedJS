@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики Нолики</title>
+</head>
+<body>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            position: absolute ;
+            top: 50%;
+            left: 50%;
+            margin: -125px 0 0 -125px;
+            overflow: hidden
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black ;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        
+        .pobed {
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-content: center;  
+            animation-duration: 3s;
+            animation-name: slidein;
+            overflow: hidden
+        }
+        
+        @keyframes slidein {
+            from {
+                margin-left: 30%;
+                width: 300%;
+                background-color: yellow;
+            }
+            
+            to {
+                margin-left: 0%;
+                width: 100%;
+                background-color: red;
+            }
+        }
+        
+        .linia1 {
+            /* display: flex;
+            flex-direction: row; */
+            border-top: 10px solid red;
+            width: 21.2%;
+            display: none;
+            position: absolute;
+            margin-left: 40.8%;
+            margin-top: 25%;
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+        .linia2 {
+            /* display: flex;
+            flex-direction: row; */
+            border-top: 10px solid red;
+            width: 21.2%;
+            display: none;
+            position: absolute;
+            margin-left: 40.8%;
+            margin-top: 32%;
+        }
+        .linia3 {
+            /* display: flex;
+            flex-direction: row; */
+            border-top: 10px solid red;
+            width: 21.2%;
+            display: none;
+            position: absolute;
+            margin-left: 40.8%;
+            margin-top: 39%;
+        }
+        .ver1 {
+            border-top: 306px solid red;
+            width: 10px;
+            display: none;
+            position: absolute;
+            margin-top: 21.7%;
+            margin-left: 44%;
+        }
+        .ver2 {
+            border-top: 306px solid red;
+            width: 10px;
+            display: none;
+            position: absolute;
+            margin-top: 21.7%;
+            margin-left: 51.2%;
+        }
+        .ver3 {
+            border-top: 306px solid red;
+            width: 10px;
+            display: none;
+            position: absolute;
+            margin-top: 21.7%;
+            margin-left: 58.3%;
+        }
+
+
+        .di1 {
+            content:"";
+            display: none;
+            position:absolute;
+            border-top:10px solid red;
+            width:410px;
+            transform: rotate(45deg);
+            transform-origin: 0% 0%;
+            margin-top: 22%;
+            margin-left: 41.5%;
+        }
+        .di2 {
+            content:"";
+            display: none;
+            position:absolute;
+            border-top:10px solid red;
+            width:410px;
+            transform: rotate(-45deg);
+            transform-origin: 0% 0%;
+            margin-top: 42%;
+            margin-left: 41.5%;
+        }
+
+
+    </style>
+    <div class= 'box'>
+        <div class="gorizontal"> 
+            <div id="g1" class="linia1"></div>            
+            <div id="g2" class="linia2"></div>            
+            <div id="g3" class="linia3"></div>            
+        </div>
+        <div class="vertical"> 
+            <div id="v1" class="ver1"></div>            
+            <div id="v2" class="ver2"></div>            
+            <div id="v3" class="ver3"></div>            
+        </div>
+        <div class="diagonal"> 
+            <div id="d1" class="di1"></div>            
+            <div id="d2" class="di2"></div>            
+        </div>
+        <div class="main"> 
+            <p class="pobed" id="pobeda">Fight</p>
+            <div class="row" >
+                <div class="cell" onclick="button(this)" id="11"></div>
+                <div class="cell" onclick="button(this)" id="12"></div>
+                <div class="cell" onclick="button(this)" id="13"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="button(this)" id="21"></div>
+                <div class="cell" onclick="button(this)" id="22"></div>
+                <div class="cell" onclick="button(this)" id="23"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="button(this)" id="31"></div>
+                <div class="cell" onclick="button(this)" id="32"></div>
+                <div class="cell" onclick="button(this)" id="33"></div>   
+            </div>
+        </div>
+    </div>
+          
+    <script src="xo.js">
+
+
+    
+    </script>
+</body>
+</html>  

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../weather/index.html" id="current-tab" class="active">Current Weather</a></li>
+            <li><a href="10weather.html" id="forecast-tab">10 Day Forecast</a></li>
+            <li><a href="../SearchByCity/search.html" id="forecast-tab">Search by city</a></li>
+            <li><a href="../registration/login.html" id="forecast-tab">Login in</a></li>
+            <li><a href="../calculator/calculator.html" id="forecast-tab">Calculator</a></li>
+            <li><a href="../noteapp/note.html" id="forecast-tab">Note</a></li>
+            <li><a href="../modal/index.html" id="forecast-tab">Movie</a></li>
+            <li><a href="../froms/index.html" id="forecast-tab">Forms</a></li>
+            <li><a href="../game/game.html" id="forecast-tab">Game1</a></li>
+            <li><a href="../xo.html" id="forecast-tab">Game2</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <img src="" alt="" srcset="" id="weather-icon">
+        <div id="location">Unable to Fetch Weather</div>
+        <div class="desc">No Information Available.</div>
+        <div class="weather">
+            <div class="c">Error</div>
+            <div class="circle"></div>
+            <div class="f">Error</div>
+        </div>
+        <div class="info">
+            <h4>Sunrise: <span class="sunrise">No Information Available</span></h4>
+            <h4>Sunset: <span class="sunset">No Information Available</span></h4>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="../nav.js"></script>
+</body>
+
+</html>

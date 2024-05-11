@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../weather/index.html" id="current-tab" class="active">Current Weather</a></li>
+            <li><a href="10weather.html" id="forecast-tab">10 Day Forecast</a></li>
+            <li><a href="../SearchByCity/search.html" id="forecast-tab">Search by city</a></li>
+            <li><a href="../registration/login.html" id="forecast-tab">Login in</a></li>
+            <li><a href="../calculator/calculator.html" id="forecast-tab">Calculator</a></li>
+            <li><a href="../noteapp/note.html" id="forecast-tab">Note</a></li>
+            <li><a href="../modal/index.html" id="forecast-tab">Movie</a></li>
+            <li><a href="../froms/index.html" id="forecast-tab">Forms</a></li>
+            <li><a href="../game/game.html" id="forecast-tab">Game1</a></li>
+            <li><a href="../xo.html" id="forecast-tab">Game2</a></li>
+        </ul>
+    </nav>
+  <div class="container">
+    <h1>Weather Search</h1>
+    <input type="text" id="cityInput" placeholder="Enter City">
+    <button onclick="getWeather()">Search</button>
+    <div id="weatherInfo"></div>
+  </div>
+
+  <script src="search.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

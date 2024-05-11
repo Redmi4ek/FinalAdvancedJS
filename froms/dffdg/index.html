@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlmaU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_container">
+            <a href="#" class="logo">AlmaU</a>
+            <nav class="nav">
+                <!-- <ul class="nav-list">
+                    
+                </ul> -->
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+
+        <div class="current_balance"> <!-- current balance -->
+
+            <div class="current_balance_text">
+                <h1>Current Balance:</h1>
+            </div>
+
+            <div class="current_balance_amount">
+                <h1><span id="current_balance">$0</span></h1>
+            </div>
+
+        </div> <!-- current balance -->
+
+        <div class="container"> <!-- container -->
+
+            <!-- transactions -->
+            <div class="transactions">
+                <h2>Recent Transactions</h2>
+
+                <!-- <div class="transaction">
+                    <div class="transaction-info">
+                        <p class="transaction-name">Deposit Money</p>
+                    </div>
+                    <div class="transaction-info">
+                        <p>05/04/2024</p>
+                    </div>
+
+                    <div class="transaction-info">
+                        <p class="transaction-amount">₸825,000.00</p>
+                    </div>
+                </div>
+
+                <div class="transaction">
+                    <div class="transaction-info">
+                        <p class="transaction-name">Transfer Money</p>
+                    </div>
+                    <div class="transaction-info">
+                        <p>03/04/2024</p>
+                    </div>
+                    <div class="transaction-info">
+                        <p class="transaction-amount">₸825,000.00</p>
+                    </div>
+                </div>
+
+                <div class="transaction">
+                    <div class="transaction-info">
+                        <p class="transaction-name">Deposit Money</p>
+                    </div>
+                    <div class="transaction-info">
+                        <p>01/04/2024</p>
+                    </div>
+                    <div class="transaction-info">
+                        <p class="transaction-amount">₸835,000.00</p>
+                    </div>
+                </div>
+
+                <div class="transaction">
+                    <div class="transaction-info">
+                        <p class="transaction-name">Deposit Money</p>
+                    </div>
+                    <div class="transaction-info">
+                        <p>05/03/2024</p>
+                    </div>
+                    <div class="transaction-info">
+                        <p class="transaction-amount">₸25,000.00</p>
+                    </div>
+                </div>
+
+                <div class="transaction">
+                    <div class="transaction-info">
+                        <p class="transaction-name">Transfer Money</p>
+                    </div>
+                    <div class="transaction-info">
+                        <p>02/02/2024</p>
+                    </div>
+                    <div class="transaction-info">
+                        <p class="transaction-amount">$35,000.00</p>
+                    </div>
+                </div> -->
+            </div>
+            <!-- transactions -->
+
+            <div class="windows"> <!-- money windows -->
+
+                <div class="window"> <!-- window1 -->
+                    <div class="window-header">
+                        <p>Transfer Money</p>
+                    </div>
+                    <div class="window-body">
+                        <div class="send-amount">
+                            <label for="send_to">Send to</label>
+                            <input type="text" id="send_to" value="" placeholder="Name:">
+                        </div>
+                        <div class="send-amount">
+                            <label for="send_amount">Amount</label>
+                            <input type="number" id="send_amount" value="" placeholder="0">
+                        </div>
+                        <button class="continue_btn" onclick="transferMoney()">Continue ></button>
+                    </div>
+                </div> <!-- window1 -->
+
+                <div class="window"> <!-- window2 -->
+                    <div class="window-header">
+                        <p>Money Deposit</p>
+                    </div>
+                    <div class="window-body">
+                        <div class="send-amount">
+                            <label for="get_amount">Get Money</label>
+                            <input type="number" id="get_amount" value="" placeholder="0">
+                        </div>
+                        <button class="continue_btn" onclick="depositMoney()">Continue ></button>
+                    </div>
+                </div> <!-- window2 -->
+
+            </div> <!-- money windows -->
+
+        </div> <!-- container -->
+
+    </main>
+
+    <footer class="footer">
+        <div class="container_footer">
+            <p>&copy; 2024 AlmaU. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html

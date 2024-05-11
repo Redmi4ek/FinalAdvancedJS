@@ -1,0 +1,89 @@
+body {
+    margin: 0; /* Remove default body margins */
+    font-family: 'Lora', serif;
+}
+  
+  .container {
+    min-height: 100vh; /* Ensure container fills the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f1f285, #e0c45b, #e6e071); /* Smoother gradient */
+    text-align: center; /* Center text within the container */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  }
+  
+  #weatherInfo {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    max-width: 400px; /* Limit width for better readability */
+  }
+  
+  #weatherInfo h2 {
+    margin-top: 0; /* Remove extra margin above the city name */
+  }
+  
+  #weatherInfo p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  input, button {
+    padding: 12px;
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow to input/button */
+  }
+  
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(251, 242, 133, 0.8); /* Цвет фона, соответствующий текущему дизайну */
+    z-index: 1000; /* Для установки высокого значения z-index и обеспечения отображения наверху */
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
+  }
+  
+  nav.visible {
+    opacity: 1; /* Отображение меню */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black; /* Цвет текста */
+  }
+  
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Изменение цвета фона при наведении */
+  }
+  
+  nav a.active {
+    background-color: rgba(0, 0, 0, 0.2); /* Цвет фона активной вкладки */
+  }
